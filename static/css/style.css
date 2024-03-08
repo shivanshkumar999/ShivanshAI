@@ -7,7 +7,7 @@
     text-align: center;
     justify-content: center; /* Align children horizontally */
     align-items: center; /* Align children vertically */
-    display: flex;
+    display:flex;
 }
 
 body, input, #buttonsub{
@@ -34,6 +34,7 @@ body, input, #buttonsub{
 
 #left_side{
     text-align: center;
+    width: 100%;
 }
 
 #chatbot{
@@ -46,7 +47,7 @@ body, input, #buttonsub{
     border: 2px solid white;
     display: block;
     margin: auto;
-    width: 100%;
+    width: 75%;
     padding: 5px;
 }
 
