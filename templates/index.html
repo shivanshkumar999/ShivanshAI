@@ -13,6 +13,7 @@
             $(document).ready(function(){
                 $('#buttonsub').click(function(){
                     var prompt = $('#prompt').val();
+                    document.getElementById("prompt").value = "";
                     $("#chatscreen").append('<div class="chat-bubble user-bubble">' + prompt + ' :🙋‍♂️</div>');
                     $.ajax({
                         url:"/chat",
