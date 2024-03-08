@@ -1,0 +1,122 @@
+#left{
+    background-image: url('/static/css/6034768.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .move-up {
+      order: -1; /* Change column order */
+    }
+
+    .icon{
+        font-weight: bolder;
+        text-align: center;
+        font-size: 30px;
+    }
+  }
+
+  i{
+            color: blueviolet;
+  }
+
+#chatbot{
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    height: 600px;
+    position: relative;
+    top: 50px;
+    border: 2px solid white;
+    display: block;
+    margin: auto;
+    width: 75%;
+    padding: 5px;
+}
+
+
+#prompt,#buttonsub{
+    vertical-align: middle;
+    float: right;
+    width: 100%;
+}
+
+#buttonsub{
+    background-color: blueviolet;
+    border: 2px solid white;
+}
+
+#inputs{
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+
+#right{
+    height: 100vh; /* Adjust as needed */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+#right h1{
+    color: blueviolet;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background: violet;
+    border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+    background: blueviolet;
+    }
+
+    #chatscreen {
+        overflow-y: scroll;
+        height: 500px;
+        overflow: auto; /* Enable scrolling if content exceeds container height */ /* Set a fixed height for the chat window */
+    }
+    .chat-bubble {
+        padding: 10px;
+        margin-bottom: 10px;
+        max-width: 100%; /* Limit width of chat bubbles */
+    }
+    .user-bubble {
+        text-align: right;
+        color: white;
+        margin-left: auto;
+        width: 75%;
+        border-radius: 10px;
+        background-color: blueviolet; /* Light blue background for user's chat bubble */
+    }
+    .server-bubble {
+        text-align: left;
+        color: blueviolet;
+        width: 75%;
+        border-radius: 10px;    
+        background-color: white; /* Light gray background for server's chat bubble */
+    }
+
+    #warn, #modelname{
+        color: white;
+        font-weight: bolder;
+        position: relative;
+        top: 50px;
+    }
