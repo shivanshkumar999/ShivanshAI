@@ -5,8 +5,16 @@
     height: 100vh;
     color: white;
     text-align: center;
+    justify-content: center; /* Align children horizontally */
+    align-items: center; /* Align children vertically */
+    display: flex;
 }
 
+body, input, #buttonsub{
+    user-select: none;
+    cursor:cell;
+    caret-color: blueviolet;
+}
 
 @media (max-width: 768px) {
     .move-up {
@@ -24,17 +32,21 @@
             color: blueviolet;
   }
 
+#left_side{
+    text-align: center;
+}
+
 #chatbot{
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     backdrop-filter: blur(10px);
     height: 600px;
     position: relative;
-    top: 50px;
+    /* top: 50px; */
     border: 2px solid white;
     display: block;
     margin: auto;
-    width: 75%;
+    width: 100%;
     padding: 5px;
 }
 
@@ -118,5 +130,5 @@
         color: white;
         font-weight: bolder;
         position: relative;
-        top: 50px;
+        /* top: 50px; */
     }
